@@ -41,7 +41,7 @@ if (Object.keys(obj).length === 0) {
 // 0 == "" is true
 // 0 == false is true
 
-// Nullish coalescing operatorn ?? it mainly used for null and undefined
+// Nullish coalescing operator ?? it mainly used for null and undefined
 
 // so for eg we are getting something from firebase or appwrite now, we normally get two response so if null came we can ignore it
 
