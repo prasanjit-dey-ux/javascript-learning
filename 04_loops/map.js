@@ -20,3 +20,20 @@ for(const [key, value] of map){
     console.log(key,":", value);
     
 }
+
+let number = [1, 2, 3, 4, 5, 6, 7, 8, 9 ,10]
+
+const mynum = number.map((num) => num + 10 );
+
+console.log(`Adding 1to each number: ${mynum}`);
+
+
+// Chaining, when we try to use more than one mode together
+const mynum2 = number
+            .map((num) => num * 10)
+            .map((num) => num + 1)
+            .filter((num) => num >= 50);
+
+console.log(mynum2);
+
+
