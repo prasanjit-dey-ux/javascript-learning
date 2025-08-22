@@ -1,5 +1,5 @@
 /*foreach loop
-some loops are directly added in array property
+- some loops are directly added in array property
 
 
 */
@@ -46,4 +46,20 @@ const myCoding = [
 
 myCoding.forEach((item) => {
     console.log(item.languageName);
+});
+
+
+// foreach loop doesnt return
+
+const vault = myCoding.forEach((item) => {
+    console.log(item);
+    return item // even if we return it still comes undefined
 })
+
+console.log(vault); // this comes undefined 
+
+// so we use filter if we want to return something
+
+
+
+
