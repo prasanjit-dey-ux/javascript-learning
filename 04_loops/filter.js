@@ -25,3 +25,5 @@ num.forEach((n3) => {
 
 console.log(mynum);
 
+
+
