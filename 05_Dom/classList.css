@@ -1,0 +1,18 @@
+body { font-family: sans-serif; }
+
+/* The style for the input when it's in an error state */
+.error-border {
+    border: 2px solid red;
+}
+
+/* The style for the error message text */
+.error-text {
+    color: red;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+/* A utility class to hide elements */
+.hidden {
+    display: none;
+}
