@@ -70,7 +70,7 @@ function updateWallet(summaryInfo) {
 // --- The Promise Chain ---
 createOrder(cart)
     .then(orderDetails => {
-        // The return value of this function is passed to the next .then()
+        
         return proceedToPayment(orderDetails);
     })
     .then(paymentInfo => {
@@ -80,10 +80,10 @@ createOrder(cart)
         return updateWallet(summaryInfo);
     })
     .then(finalBalance => {
-        // This is the final step in the successful chain
+       
         console.log(`\n🎉 Checkout complete! Final wallet balance: $${finalBalance}`);
     })
     .catch(error => {
-        // This will catch any error from ANY of the steps in the chain
+
         console.error(`\n❌ An error occurred: ${error.message}`);
     });
