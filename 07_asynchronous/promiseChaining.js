@@ -1,6 +1,6 @@
-// --- Mock Data ---
+
 const cart = ["Web3 Fundamentals Course", "Advanced Smart Contracts Course"];
-let walletBalance = 500; // User's starting wallet balance
+let walletBalance = 500; 
 
 // --- Asynchronous Functions (each returns a Promise) ---
 
