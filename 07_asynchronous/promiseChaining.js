@@ -2,9 +2,9 @@
 const cart = ["Web3 Fundamentals Course", "Advanced Smart Contracts Course"];
 let walletBalance = 500; 
 
-// --- Asynchronous Functions (each returns a Promise) ---
+// - Asynchronous Functions (each returns a Promise) -
 
-function createOrder(cart) {
+function createOrderw(cart) {
     return new Promise((resolve, reject) => {
         console.log("1. Creating order...");
         setTimeout(() => {
