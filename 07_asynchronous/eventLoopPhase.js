@@ -1,19 +1,19 @@
-// Understanding the order of execution
+// Understanding the order of execution //
 console.log("1 - Start");
 
-// Macrotask (Time phase)
+// Macrotask (Time phase) //
 setTimeout(() => console.log('2 - setTimeout'),0);
 
 // Microtask 
 Promise.resolve().then(() => console.log('3 - Promise'));
 
-// Immidiate execution
+// Immidiate execution //
 console.log('4 - Synchronous');
 
-// Microtask
+// Microtask //
 queueMicrotask(() => console.log('5 - queueMicrotask'));
 
-// Next tick (highest priority microtask in Node.js)
+// Next tick (highest priority microtask in Node.js) //
 process.nextTick(() => console.log('6 - NextTick')) 
 
 // Output order:
