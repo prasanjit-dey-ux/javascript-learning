@@ -17,3 +17,8 @@
  * Interviews
  * Async await vs Promise.then/.catch
  */
+
+async function fetchUserData(userId) {
+    
+    
+}
