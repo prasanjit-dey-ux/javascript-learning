@@ -44,7 +44,19 @@
  * Error Handling
    - We use trycatch to handel errors.
    - we also use .catch but trycatch is preferable
- * Interviews
+ 
+* Interviews
+  How can you run multiple async tasks in parallel with async/await?
+
+  Use Promise.all():
+
+  ```
+  const [user, posts] = await Promise.all([fetchUser(), fetchPosts()]);
+  ```
+
+  All promises start at the same time; resolved together.
+   
+   
  * Async await vs Promise.then/.catch
   See both are the same async await is just a syntactical sugar of .then/.catch as behind the scene it run this only, but async await is a new way and
   its litle better because we dont have to deal with callback and so we need to do the promise chaining.
